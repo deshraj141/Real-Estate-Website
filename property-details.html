@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Details | DreamHome</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-home text-accent"></i> DreamHome</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="properties.html">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agents.html">Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="properties.html" class="btn btn-custom">Find a Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Spacing for header -->
+    <div style="height: 80px"></div>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+      <div class="row">
+        <!-- Left Column: Carousel & Description -->
+        <div class="col-lg-8">
+          <!-- Title & Address -->
+          <div class="mb-4">
+            <h1 class="display-5">Modern Luxury Villa</h1>
+            <p class="text-muted">
+              <i class="fas fa-map-marker-alt text-accent me-2"></i> 123 Marine
+              Drive, South Mumbai, MH 400020
+            </p>
+            <h2 class="text-custom fw-bold">₹12.5 Cr</h2>
+          </div>
+
+          <!-- Carousel -->
+          <div
+            id="propertyCarousel"
+            class="carousel slide mb-5 shadow rounded overflow-hidden"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#propertyCarousel"
+                data-bs-slide-to="0"
+                class="active"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertyCarousel"
+                data-bs-slide-to="1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#propertyCarousel"
+                data-bs-slide-to="2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/l2.jpg"
+                  class="d-block w-100"
+                  alt="Living Room"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/kitchen.webp"
+                  class="d-block w-100"
+                  alt="Kitchen"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/bed.jpg"
+                  class="d-block w-100"
+                  alt="Bedroom"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#propertyCarousel"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#propertyCarousel"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+          <!-- Description -->
+          <div class="mb-5">
+            <h3 class="mb-3">Description</h3>
+            <p class="text-muted">
+              Welcome to this stunning modern luxury villa located in the heart
+              of South Mumbai. This architectural masterpiece offers the perfect
+              blend of elegance and comfort. Featuring spacious living areas, a
+              state-of-the-art kitchen, and breathtaking views, this property is
+              designed for those who appreciate the finer things in life.
+            </p>
+            <p class="text-muted">
+              The open-concept layout seamlessly connects the indoor and outdoor
+              spaces, making it ideal for entertaining. The master suite is a
+              private retreat with a spa-like bathroom and a walk-in closet.
+              Don't miss the opportunity to own this piece of paradise.
+            </p>
+          </div>
+
+          <!-- Features -->
+          <div class="mb-5">
+            <h3 class="mb-3">Features</h3>
+            <div class="row g-3">
+              <div class="col-md-4 col-6">
+                <div class="d-flex align-items-center bg-light p-3 rounded">
+                  <i class="fas fa-bed fa-lg text-accent me-3"></i>
+                  <span>5 Bedrooms</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="d-flex align-items-center bg-light p-3 rounded">
+                  <i class="fas fa-bath fa-lg text-accent me-3"></i>
+                  <span>4 Bathrooms</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="d-flex align-items-center bg-light p-3 rounded">
+                  <i class="fas fa-ruler-combined fa-lg text-accent me-3"></i>
+                  <span>4500 sqft</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="d-flex align-items-center bg-light p-3 rounded">
+                  <i class="fas fa-parking fa-lg text-accent me-3"></i>
+                  <span>2 Garage</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="d-flex align-items-center bg-light p-3 rounded">
+                  <i class="fas fa-swimmer fa-lg text-accent me-3"></i>
+                  <span>Swimming Pool</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-6">
+                <div class="d-flex align-items-center bg-light p-3 rounded">
+                  <i class="fas fa-snowflake fa-lg text-accent me-3"></i>
+                  <span>Central AC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Agent Card -->
+        <div class="col-lg-4">
+          <div
+            class="card border-0 shadow-sm p-4 sticky-top"
+            style="top: 100px; z-index: 1"
+          >
+            <div class="d-flex align-items-center mb-4">
+              <img
+                src="https://placehold.co/80/0d1b2a/white?text=JS"
+                class="rounded-circle me-3"
+                alt="Agent"
+              />
+              <div>
+                <h5 class="mb-0">Deshraj Soni</h5>
+                <small class="text-muted">Senior Agent</small>
+                <div class="text-warning small">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+            <button
+              class="btn btn-custom w-100 mb-3"
+              data-bs-toggle="modal"
+              data-bs-target="#contactModal"
+            >
+              Contact Agent
+            </button>
+            <button class="btn btn-outline-secondary w-100">
+              View Profile
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Contact Agent</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="detailsContactForm">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4">
+I am interested in [Modern Luxury Villa]</textarea
+                >
+              </div>
+              <button type="submit" class="btn btn-custom w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="mb-4">DreamHome</h3>
+            <p class="text-light opacity-75">
+              Your trusted partner in finding the perfect property. We bring you
+              the best real estate deals in the market with transparency and
+              trust.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="properties.html">Properties</a></li>
+              <li class="mb-2"><a href="agents.html">Agents</a></li>
+              <li class="mb-2"><a href="blog.html">Blog</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Contact Info</h5>
+            <ul class="list-unstyled text-light opacity-75">
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt text-accent me-2"></i> 123
+                Nariman Point, Mumbai, India
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone-alt text-accent me-2"></i> +91 98765
+                43210
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-envelope text-accent me-2"></i>
+                info@dreamhome.in
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Newsletter</h5>
+            <p class="text-light opacity-75">
+              Subscribe to get the latest updates.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+              />
+              <button class="btn btn-custom" type="button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center text-light opacity-50 small">
+          &copy; 2026 DreamHome Real Estate. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

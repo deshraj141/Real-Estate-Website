@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Agents | DreamHome</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .agent-card {
+        transition: all 0.3s ease;
+      }
+      .agent-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+      }
+      .social-links a {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 50%;
+        background-color: var(--light-bg);
+        color: var(--primary-color);
+        transition: all 0.3s ease;
+        margin: 0 5px;
+        display: inline-block;
+      }
+      .social-links a:hover {
+        background-color: var(--accent-color);
+        color: white;
+      }
+      .page-header {
+        background:
+          linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)),
+          url("images/bg.png");
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        color: white;
+        margin-top: 56px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-home text-accent"></i> DreamHome</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="properties.html">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="agents.html">Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="properties.html" class="btn btn-custom">Find a Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+      <div class="container">
+        <h1 class="display-4">Meet Our Agents</h1>
+        <p class="lead">The best team in the industry working for you</p>
+      </div>
+    </header>
+
+    <!-- Agents Grid -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Agent 1 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card agent-card border-0 h-100 text-center">
+              <div class="card-body p-4">
+                <img
+                  src="images/Me.jpeg"
+                  class="img-fluid rounded-circle mb-3 shadow-sm"
+                  alt="Agent"
+                />
+                <h5 class="fw-bold mb-1">Deshraj Soni</h5>
+                <p class="text-muted small mb-3">CEO</p>
+                <p class="card-text small text-muted">
+                  With over 10 years of experience, Deshraj specializes in
+                  luxury villas and high-end properties.
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent 2 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card agent-card border-0 h-100 text-center">
+              <div class="card-body p-4">
+                <img
+                  src="images/Shivam.jpeg"
+                  class="img-fluid rounded-circle mb-3 shadow-sm"
+                  alt="Agent"
+                />
+                <h5 class="fw-bold mb-1">Shivam</h5>
+                <p class="text-muted small mb-3">Rental Specialist</p>
+                <p class="card-text small text-muted">
+                  Shivam knows the city like the back of his hand and can help you
+                  find the perfect rental.
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent 3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card agent-card border-0 h-100 text-center">
+              <div class="card-body p-4">
+                <img
+                  src="images/Prajwal.jpeg"
+                  class="img-fluid rounded-circle mb-3 shadow-sm"
+                  alt="Agent"
+                />
+                <h5 class="fw-bold mb-1">Prajwal</h5>
+                <p class="text-muted small mb-3">Commercial Real Estate</p>
+                <p class="card-text small text-muted">
+                  Prajwal is the expert you need for finding office spaces and
+                  commercial investments.
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agent 4 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="card agent-card border-0 h-100 text-center">
+              <div class="card-body p-4">
+                <img
+                  src="images/Mohit.jpeg"
+                  class="img-fluid rounded-circle mb-3 shadow-sm"
+                  alt="Agent"
+                />
+                <h5 class="fw-bold mb-1">Mohit</h5>
+                <p class="text-muted small mb-3">Buyer's Agent</p>
+                <p class="card-text small text-muted">
+                  Mohit is dedicated to helping first-time homebuyers navigate
+                  the market with ease.
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="card-footer bg-white border-0 pb-3">
+                <button
+                  class="btn btn-outline-custom w-100"
+                  data-bs-toggle="modal"
+                  data-bs-target="#contactModal"
+                >
+                  Contact Me
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0">
+            <h5 class="modal-title">Contact Agent</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-control" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4">
+I would like to know more about your services.</textarea
+                >
+              </div>
+              <button type="submit" class="btn btn-custom w-100">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="mb-4">DreamHome</h3>
+            <p class="text-light opacity-75">
+              Your trusted partner in finding the perfect property.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="properties.html">Properties</a></li>
+              <li class="mb-2"><a href="agents.html">Agents</a></li>
+              <li class="mb-2"><a href="blog.html">Blog</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Contact Info</h5>
+            <ul class="list-unstyled text-light opacity-75">
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt text-accent me-2"></i> 123
+                Nariman Point, Mumbai, India
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone-alt text-accent me-2"></i> +91 86268
+                97314
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-envelope text-accent me-2"></i>
+                info@dreamhome.in
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Newsletter</h5>
+            <p class="text-light opacity-75">
+              Subscribe to get the latest updates.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+              />
+              <button class="btn btn-custom" type="button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center text-light opacity-50 small">
+          &copy; 2026 DreamHome Real Estate. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | DreamHome</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            background: linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)), url('images/bg.png');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            color: white;
+            margin-top: 56px;
+        }
+        .blog-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fas fa-home text-accent"></i> DreamHome</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="properties.html">Properties</a></li>
+                    <li class="nav-item"><a class="nav-link" href="agents.html">Agents</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="properties.html" class="btn btn-custom">Find a Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="display-4">Latest News</h1>
+            <p class="lead">Insights, tips, and trends from the real estate world.</p>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Blog Posts -->
+                <div class="col-lg-8">
+                    <div class="row g-4" id="blogGrid">
+                        <!-- Post 1 -->
+                        <div class="col-md-6 blog-item">
+                            <div class="card blog-card h-100 border-0 shadow-sm">
+                                <img src="https://oss-brigade.s3.ap-southeast-1.amazonaws.com/blogs/top-10-tips-for-first-time-homebuyers/blog__979e22a3-3f3d-4253-997c-1df45a88da34.jpg" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <small class="text-accent text-uppercase fw-bold">Tips</small>
+                                    <h5 class="card-title mt-2"><a href="#" class="text-decoration-none text-dark">Top 10 Tips for First-Time Homebuyers</a></h5>
+                                    <p class="card-text text-muted small">Buying your first home can be overwhelming. Here are some tips to help you navigate the process.</p>
+                                    <a href="#" class="text-primary-custom fw-bold small">Read More <i class="fas fa-arrow-right list-inline-item"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Post 2 -->
+                         <div class="col-md-6 blog-item">
+                            <div class="card blog-card h-100 border-0 shadow-sm">
+                                <img src="https://wp.trythat.ai/wp-content/uploads/2026/02/real-estate-market-trends-2026-1024x683.png" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <small class="text-accent text-uppercase fw-bold">Market Trends</small>
+                                    <h5 class="card-title mt-2"><a href="#" class="text-decoration-none text-dark">Real Estate Market Trends in 2026</a></h5>
+                                    <p class="card-text text-muted small">What you need to know about the current market conditions and predictions for the future.</p>
+                                    <a href="#" class="text-primary-custom fw-bold small">Read More <i class="fas fa-arrow-right list-inline-item"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Post 3 -->
+                         <div class="col-md-6 blog-item">
+                            <div class="card blog-card h-100 border-0 shadow-sm">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/interior-design-trends-2022-1653417252.jpeg?crop=0.668xw:1.00xh;0.106xw,0&resize=640:*" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <small class="text-accent text-uppercase fw-bold">Design</small>
+                                    <h5 class="card-title mt-2"><a href="#" class="text-decoration-none text-dark">Interior Design Trends to Watch</a></h5>
+                                    <p class="card-text text-muted small">Refresh your home with these latest interior design trends that are taking over.</p>
+                                    <a href="#" class="text-primary-custom fw-bold small">Read More <i class="fas fa-arrow-right list-inline-item"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Post 4 -->
+                         <div class="col-md-6 blog-item">
+                            <div class="card blog-card h-100 border-0 shadow-sm">
+                                <img src="https://theprudentinvestor.in/wp-content/uploads/2020/07/buy-v-rent.png" class="card-img-top" alt="Blog Post">
+                                <div class="card-body">
+                                    <small class="text-accent text-uppercase fw-bold">Investing</small>
+                                    <h5 class="card-title mt-2"><a href="#" class="text-decoration-none text-dark">Is Buying a Rental Property Worth It?</a></h5>
+                                    <p class="card-text text-muted small">Analyzing the pros and cons of investing in rental properties in the current economy.</p>
+                                    <a href="#" class="text-primary-custom fw-bold small">Read More <i class="fas fa-arrow-right list-inline-item"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Load More Button -->
+                    <div class="text-center mt-5">
+                        <button id="loadMoreBtn" class="btn btn-outline-custom px-5">Load More</button>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4 mt-5 mt-lg-0">
+                    <!-- Search -->
+                     <div class="card border-0 shadow-sm p-4 mb-4">
+                        <h5 class="mb-3">Search</h5>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <button class="btn btn-custom" type="button"><i class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+
+                    <!-- Categories -->
+                    <div class="card border-0 shadow-sm p-4 mb-4">
+                        <h5 class="mb-3">Categories</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="fas fa-angle-right text-accent me-2"></i> Market Trends (5)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="fas fa-angle-right text-accent me-2"></i> Buying Tips (8)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="fas fa-angle-right text-accent me-2"></i> Interior Design (3)</a></li>
+                            <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="fas fa-angle-right text-accent me-2"></i> Investing (4)</a></li>
+                             <li class="mb-2"><a href="#" class="text-decoration-none text-muted"><i class="fas fa-angle-right text-accent me-2"></i> Neighborhoods (6)</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Recent Posts -->
+                    <div class="card border-0 shadow-sm p-4">
+                        <h5 class="mb-3">Recent Posts</h5>
+                        <div class="d-flex mb-3">
+                            <img src="https://placehold.co/80/0d1b2a/white?text=1" class="rounded me-3" alt="Post">
+                            <div>
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none text-dark">Top 10 Tips...</a></h6>
+                                <small class="text-muted">Feb 2, 2026</small>
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <img src="https://placehold.co/80/16db65/white?text=2" class="rounded me-3" alt="Post">
+                            <div>
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none text-dark">Market Trends...</a></h6>
+                                <small class="text-muted">Jan 28, 2026</small>
+                            </div>
+                        </div>
+                         <div class="d-flex">
+                            <img src="https://placehold.co/80/415a77/white?text=3" class="rounded me-3" alt="Post">
+                            <div>
+                                <h6 class="mb-1"><a href="#" class="text-decoration-none text-dark">Interior Design...</a></h6>
+                                <small class="text-muted">Jan 15, 2026</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <h3 class="mb-4">DreamHome</h3>
+                    <p class="text-light opacity-75">Your trusted partner in finding the perfect property.</p>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                     <h5 class="text-white mb-4">Quick Links</h5>
+                     <ul class="list-unstyled">
+                         <li class="mb-2"><a href="index.html">Home</a></li>
+                         <li class="mb-2"><a href="properties.html">Properties</a></li>
+                         <li class="mb-2"><a href="agents.html">Agents</a></li>
+                         <li class="mb-2"><a href="blog.html">Blog</a></li>
+                         <li class="mb-2"><a href="contact.html">Contact</a></li>
+                     </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Contact Info</h5>
+                   <ul class="list-unstyled text-light opacity-75">
+                         <li class="mb-3"><i class="fas fa-map-marker-alt text-accent me-2"></i> 123 Nariman Point, Mumbai, India</li>
+                         <li class="mb-3"><i class="fas fa-phone-alt text-accent me-2"></i> +91 98765 43210</li>
+                        <li class="mb-3"><i class="fas fa-envelope text-accent me-2"></i> info@dreamhome.in</li>
+                    </ul>
+                </div>
+                 <div class="col-lg-3 col-md-6">
+                     <h5 class="text-white mb-4">Newsletter</h5>
+                     <p class="text-light opacity-75">Subscribe to get the latest updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-custom" type="button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                 </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center text-light opacity-50 small">
+                &copy; 2026 DreamHome Real Estate. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

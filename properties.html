@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties | DreamHome</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .page-header {
+        background:
+          linear-gradient(rgba(13, 27, 42, 0.8), rgba(13, 27, 42, 0.8)),
+          url("../images/bg.png");
+        background-size: cover;
+        background-position: center;
+        padding: 100px 0;
+        color: white;
+        margin-top: 56px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"
+          ><i class="fas fa-home text-accent"></i> DreamHome</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="properties.html">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agents.html">Agents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3">
+              <a href="properties.html" class="btn btn-custom">Find a Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center">
+      <div class="container">
+        <h1 class="display-4">Available Properties</h1>
+        <p class="lead">Explore our curated list of premium properties</p>
+      </div>
+    </header>
+
+    <!-- Properties Section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Sidebar Filter -->
+          <div class="col-lg-3 mb-4">
+            <div class="card border-0 shadow-sm p-3">
+              <h4 class="mb-3">Filter</h4>
+              <form id="filterForm">
+                <div class="mb-3">
+                  <label class="form-label fw-bold">Location</label>
+                  <select class="form-select" id="locationFilter">
+                    <option value="all">All Locations</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <option value="Pune">Pune</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">Property Type</label>
+                  <select class="form-select" id="typeFilter">
+                    <option value="all">All Types</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="Villa">Villa</option>
+                    <option value="House">House</option>
+                    <option value="Penthouse">Penthouse</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label fw-bold">Price Range</label>
+                  <select class="form-select" id="priceFilter">
+                    <option value="all">Any Price</option>
+                    <option value="low">Under ₹2 Cr</option>
+                    <option value="medium">₹2 Cr - ₹5 Cr</option>
+                    <option value="high">₹5 Cr+</option>
+                  </select>
+                </div>
+                <button
+                  type="button"
+                  class="btn btn-custom w-100 mb-2"
+                  id="applyFilter"
+                >
+                  Apply Filter
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary w-100"
+                  id="resetFilter"
+                >
+                  Reset
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Property Grid -->
+          <div class="col-lg-9">
+            <div class="row g-4" id="propertyGrid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5 pb-2">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-4 col-md-6">
+            <h3 class="mb-4">DreamHome</h3>
+            <p class="text-light opacity-75">
+              Your trusted partner in finding the perfect property. We bring you
+              the best real estate deals in the market with transparency and
+              trust.
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="text-white mb-4">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="index.html">Home</a></li>
+              <li class="mb-2"><a href="properties.html">Properties</a></li>
+              <li class="mb-2"><a href="agents.html">Agents</a></li>
+              <li class="mb-2"><a href="blog.html">Blog</a></li>
+              <li class="mb-2"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Contact Info</h5>
+            <ul class="list-unstyled text-light opacity-75">
+              <li class="mb-3">
+                <i class="fas fa-map-marker-alt text-accent me-2"></i> 123
+                Nariman Point, Mumbai, India
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-phone-alt text-accent me-2"></i> +91 86268
+                97314
+              </li>
+              <li class="mb-3">
+                <i class="fas fa-envelope text-accent me-2"></i>
+                info@dreamhome.in
+              </li>
+            </ul>
+          </div>
+          <!-- Newsletter excluded for brevity on this page, but kept layout similar -->
+          <div class="col-lg-3 col-md-6">
+            <h5 class="text-white mb-4">Newsletter</h5>
+            <p class="text-light opacity-75">
+              Subscribe to get the latest updates.
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+              />
+              <button class="btn btn-custom" type="button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary" />
+        <div class="text-center text-light opacity-50 small">
+          &copy; 2026 DreamHome Real Estate. All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Properties data -->
+    <script src="js/properties-data.js"></script>
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
